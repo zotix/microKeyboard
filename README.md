@@ -182,3 +182,9 @@ See [KEYMAP.md](file:///g:/ws/microKeyboard/docs/KEYMAP.md) for the complete key
 - **[R&D] Custom CH552G Firmware Exploration**:
   - *References*: `biemster/3keys_1knob`, `eccherda/ch552g_mini_keyboard` (QMK/ZMK are not supported on 8-bit CH552G).
   - *Constraint*: Requires opening the case to short bootloader pads, verifying batch GPIO pinouts, and accepting irreversible overwrite of stock firmware (no USB HID backup).
+
+---
+
+## 8. License
+
+This project is licensed under the [MIT License](LICENSE).
