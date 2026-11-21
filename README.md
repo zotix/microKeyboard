@@ -175,10 +175,9 @@ See [KEYMAP.md](file:///g:/ws/microKeyboard/docs/KEYMAP.md) for the complete key
 
 ## 7. Backlog & Future Considerations
 
-- **[Deferred] Standalone `.exe` Packaging (PyInstaller `--onedir` / Nuitka)**:
-  - *Decision*: Keep running via `pythonw.exe` + `.lnk` shortcuts for now.
-  - *Rationale*: Native `pythonw.exe` starts faster, stays lightweight, allows instant edits, and avoids Antivirus / Windows Defender false positives triggered by `WH_KEYBOARD_LL` + `SendInput` inside PyInstaller binaries. Note that `pip`/`PyInstaller` are also not currently installed on this machine.
-  - *When to revisit*: If deploying to other Windows PCs that do not have Python 3.13 installed (prefer `--onedir` over `--onefile`).
+- **[Done in `v1.1.1`] Standalone `.exe` Packaging (PyInstaller `--onedir`)**:
+  - Built via `scripts/build_exe.ps1` into `microKeyboard.exe` (Switcher + System Tray) and `microKeyboardFlasher.exe` (Hardware Flasher), packaged as `microKeyboard-v1.1.1-win64.zip` on GitHub Releases.
+  - Note: Native `pythonw.exe` + `.lnk` shortcuts remain available for fastest startup and zero Antivirus false-positive risk on machines with Python installed.
 - **[R&D] Custom CH552G Firmware Exploration**:
   - *References*: `biemster/3keys_1knob`, `eccherda/ch552g_mini_keyboard` (QMK/ZMK are not supported on 8-bit CH552G).
   - *Constraint*: Requires opening the case to short bootloader pads, verifying batch GPIO pinouts, and accepting irreversible overwrite of stock firmware (no USB HID backup).

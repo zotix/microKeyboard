@@ -22,8 +22,10 @@ from .window_enum import RunningWindow, list_running_windows
 
 APP_TITLE = f"microKeyboard Switcher v{__version__}"
 ROOT_DIR = Path(__file__).resolve().parent.parent
-DEFAULT_CONFIG_PATH = ROOT_DIR / "config" / "profiles.json"
-ICON_PATH = ROOT_DIR / "assets" / "microkeyboard.ico"
+APP_DIR = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else ROOT_DIR
+BUNDLE_DIR = Path(getattr(sys, "_MEIPASS", APP_DIR))
+DEFAULT_CONFIG_PATH = APP_DIR / "config" / "profiles.json"
+ICON_PATH = BUNDLE_DIR / "assets" / "microkeyboard.ico"
 
 SLOT_LABELS: list[tuple[str, str]] = [
     ("key1", "Key 1"),

@@ -22,7 +22,8 @@ from .gui import (
     _CLR_REC_IDLE,
     _CLR_RUNNING,
     _CLR_RUNNING_HOVER,
-    ROOT_DIR,
+    APP_DIR,
+    BUNDLE_DIR,
     SLOT_LABELS,
     RoundedButton,
     format_tk_keypress,
@@ -39,8 +40,8 @@ from .protocol import (
 from .tray_and_lock import SingleInstanceLock, focus_existing_window
 
 FLASHER_TITLE = f"microKeyboard Hardware Flasher v{__version__}"
-FLASHER_CONFIG_PATH = ROOT_DIR / "config" / "hardware_layers.json"
-FLASHER_ICON_PATH = ROOT_DIR / "assets" / "microkeyboard_flasher.ico"
+FLASHER_CONFIG_PATH = APP_DIR / "config" / "hardware_layers.json"
+FLASHER_ICON_PATH = BUNDLE_DIR / "assets" / "microkeyboard_flasher.ico"
 
 HARDWARE_PRESETS: list[str] = [
     "left",
