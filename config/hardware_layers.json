@@ -1,0 +1,29 @@
+{
+  "led_mode": 0,
+  "layers": {
+    "1": {
+      "key1": "left",
+      "key2": "media_play_pause",
+      "key3": "right",
+      "knob_ccw": "vol_down",
+      "knob_cw": "vol_up",
+      "knob_press": "vol_mute"
+    },
+    "2": {
+      "key1": "ctrl+c",
+      "key2": "ctrl+v",
+      "key3": "ctrl+z",
+      "knob_ccw": "vol_down",
+      "knob_cw": "vol_up",
+      "knob_press": "vol_mute"
+    },
+    "3": {
+      "key1": "ctrl+shift+alt+f1",
+      "key2": "ctrl+shift+alt+f2",
+      "key3": "ctrl+shift+alt+f3",
+      "knob_ccw": "ctrl+shift+alt+f4",
+      "knob_cw": "ctrl+shift+alt+f5",
+      "knob_press": "ctrl+shift+alt+f6"
+    }
+  }
+}

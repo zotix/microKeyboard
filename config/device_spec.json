@@ -1,0 +1,62 @@
+{
+  "device": "microKeyboard (3-Key + 1-Knob RGB)",
+  "firmware_backup_supported": false,
+  "firmware_backup_reason": "Stock CH57x HID protocol (MI_01) has no flash/firmware readback command; chip read protection typically blocks ISP/bootloader readout as well.",
+  "hid_collections": [
+    {
+      "path": "\\\\?\\hid#vid_1189&pid_8890&mi_00#7&35d57d61&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\\kbd",
+      "vid": "0x1189",
+      "pid": "0x8890",
+      "version": "0x0000",
+      "usage_page": "0x0001",
+      "usage": "0x0006",
+      "input_report_bytes": 9,
+      "output_report_bytes": 2,
+      "feature_report_bytes": 0
+    },
+    {
+      "path": "\\\\?\\hid#vid_1189&pid_8890&mi_01#7&2f1db0cf&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+      "vid": "0x1189",
+      "pid": "0x8890",
+      "version": "0x0000",
+      "usage_page": "0xFF00",
+      "usage": "0x0001",
+      "input_report_bytes": 65,
+      "output_report_bytes": 65,
+      "feature_report_bytes": 0
+    },
+    {
+      "path": "\\\\?\\hid#vid_1189&pid_8890&mi_02&col01#7&b46730d&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}\\kbd",
+      "vid": "0x1189",
+      "pid": "0x8890",
+      "version": "0x0000",
+      "usage_page": "0x0001",
+      "usage": "0x0006",
+      "input_report_bytes": 12,
+      "output_report_bytes": 2,
+      "feature_report_bytes": 0
+    },
+    {
+      "path": "\\\\?\\hid#vid_1189&pid_8890&mi_02&col02#7&b46730d&0&0001#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+      "vid": "0x1189",
+      "pid": "0x8890",
+      "version": "0x0000",
+      "usage_page": "0x000C",
+      "usage": "0x0001",
+      "input_report_bytes": 3,
+      "output_report_bytes": 0,
+      "feature_report_bytes": 0
+    },
+    {
+      "path": "\\\\?\\hid#vid_1189&pid_8890&mi_03#7&2309ff52&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}",
+      "vid": "0x1189",
+      "pid": "0x8890",
+      "version": "0x0000",
+      "usage_page": "0x0001",
+      "usage": "0x0002",
+      "input_report_bytes": 5,
+      "output_report_bytes": 0,
+      "feature_report_bytes": 0
+    }
+  ]
+}

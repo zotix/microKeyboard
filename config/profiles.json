@@ -1,0 +1,68 @@
+{
+  "default": {
+    "led_mode": 0,
+    "keys": {
+      "key1": "left",
+      "key2": "media_play_pause",
+      "key3": "right",
+      "knob_ccw": "vol_down",
+      "knob_cw": "vol_up",
+      "knob_press": "vol_mute"
+    }
+  },
+  "profiles": [
+    {
+      "name": "VS Code",
+      "process": "Code.exe",
+      "led_mode": 0,
+      "keys": {
+        "key1": "ctrl+shift+p",
+        "key2": "ctrl+/",
+        "key3": "f5",
+        "knob_ccw": "ctrl+-",
+        "knob_cw": "ctrl+=",
+        "knob_press": "ctrl+`"
+      }
+    },
+    {
+      "name": "Chrome - YouTube",
+      "process": "chrome.exe",
+      "title_regex": "YouTube",
+      "led_mode": 0,
+      "keys": {
+        "key1": "j",
+        "key2": "media_play_pause",
+        "key3": "l",
+        "knob_ccw": "ctrl+pgup",
+        "knob_cw": "ctrl+pgdn",
+        "knob_press": "ctrl+r"
+      }
+    },
+    {
+      "name": "Chrome",
+      "process": "chrome.exe",
+      "led_mode": 0,
+      "keys": {
+        "key1": "ctrl+t",
+        "key2": "ctrl+w",
+        "key3": "ctrl+shift+t",
+        "knob_ccw": "ctrl+pgup",
+        "knob_cw": "ctrl+pgdn",
+        "knob_press": "ctrl+r"
+      }
+    },
+    {
+      "name": "Notepad",
+      "process": "notepad.exe",
+      "led_mode": 0,
+      "keys": {
+        "key1": "ctrl+s",
+        "key2": "ctrl+f",
+        "key3": "ctrl+a",
+        "knob_ccw": "ctrl+-",
+        "knob_cw": "ctrl+=",
+        "knob_press": "ctrl+n"
+      }
+    }
+  ]
+}
